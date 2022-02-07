@@ -50,33 +50,73 @@ a:hover{-webkit-transition:all 0.4s ease-In-out;-moz-transition:all 0.4s ease-In
 .menu-Bar.open span:nth-child(2){width:0;opacity:0;}
 .menu-Bar.open span:nth-child(3){transform:rotate(-45deg);top:12px;transform-origin:right-center;}
 
-/*Search Wrapper*/
-.searchWrap{padding:20px 80px 20px 20px;background:#b18983;position:absolute;top:-100%;width:100%;-webkit-transition:all 0.4s ease-In-out;-moz-transition:all 0.4s ease-In-out;-o-transition:all 0.4s ease-In-out;transition:all 0.4s ease-In-out;z-index:9;}
-.searchWrap.active{top:0px;}
-.searchField{border-bottom:1px solid #fff;background:transparent;position:relative;height:40px;}
-.searchField input{font-size:16px;color:#fff;background:transparent;width:100%;padding:0;height:100%;font-weight:400;border:0;border-bottom:1px solid;}
-.searchField i{font-size:22px;color:#fff;position:absolute;right:-30px;top:0px;font-size:22px;position:absolute;right:-30px;top:6px;cursor:pointer;}
-.searchField input::-webkit-input-placeholder{color:#fff;}
-.searchField input::-moz-placeholder{color:#fff;}
-.searchField input:-ms-input-placeholder{color:#fff;}
-.searchField input:-moz-placeholder{color:#fff;}
-
-/*accordion*/
-.faqAccordian,.faqAccordian *{-webkit-transition:all 0.4s ease-In-out;-moz-transition:all 0.4s ease-In-out;-o-transition:all 0.4s ease-In-out;transition:all 0.4s ease-In-out;}
-.faqAccordian{display:block;}
-.faqAccordian>li{display:block;border:1px solid #d7d7d7;margin-bottom:35px;padding:17px 20px;border-radius:35px;}
-.faqAccordian h6{padding-bottom:0;font-size:20.01px;color:#4e4e4e;font-weight:400;position:relative;padding-left:0;cursor:pointer;text-align:center;}
-.faqAccordian h6:before{content:"\f0e5";font-family:'FontAwesome';font-size:30px;color:#158834;position:absolute;left:0px;border-radius:50%;bottom:0;margin:auto;vertical-align:middle;}
-.faqAccordian h6:after{content:"\f067";font-family:'FontAwesome';font-size:16px;color:#158834;position:absolute;right:0px;border-radius:50%;top:0;}
-.faqAccordian p{font-size:14px;color:#4e4e4e;font-weight:300;line-height:20px;padding-bottom:21px;}
-.faqData{display:none;}
-.faqAccordian>li.active .faqData{display:block;}
-.faqAccordian>li.active h6{margin-bottom:26px;}
-.faqAccordian>li.active h6:before{content:"\f0e5";color:#000;}
-.faqAccordian>li.active h6:after{content:"\f068";color:#000;}
-.faqAccordian>li.active{border:1px solid #158834;}
 
 /*top-header*/
+h1 {
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #101010;
+}
+
+body{
+  margin:0px;
+  padding:0px;
+}
+
+.pace {
+  pointer-events: none;
+  user-select: none;
+  z-index: 2000;
+  position: fixed;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 400px;
+  border: 0px;
+  height: 1px;
+  overflow: hidden;
+  background:#1b1b1b;
+}
+
+.pace .pace-progress {
+  box-sizing: border-box;
+  transform: translate3d(0, 0, 0);
+  max-width: 400px;
+  position: fixed;
+  z-index: 2000;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 100%;
+  height: 100%;
+  width: 100%;
+  background: grey;
+}
+
+.pace.pace-inactive {
+  display: none;
+}
+
+#preloader{
+  width:100%;
+  height:100vh;
+  background:#101010;
+  overflow:hidden;
+  position:fixed;
+  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.p {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
 
 /*header*/
 
