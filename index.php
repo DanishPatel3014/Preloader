@@ -1,19 +1,21 @@
-<!DOCTYPE html>
+<!DOCTYPE>
 <html lang="en">
    <head>
       <?php include("includes/compatibility.php"); ?>
       <meta name="description" content="">
-      <title>Paella Party</title>
-      <script src="https://cdn.jsdelivr.net/npm/jquery-bez@1.0.11/src/jquery.bez.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
-      <?php include("includes/style.php"); ?>
+      <title>Preloader</title>
+      <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+      <script src="assets/js/pace.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/jquery-bez@1.0.11/src/jquery.bez.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <?php include("includes/style.php"); ?>
    </head>
    <body>
-      <?php include("includes/header.php"); ?>
-      <h1 class="title">CODEGRID</h1>
+      
+      <h1 class="title">DANISH PATEL</h1>
 
 <div id="preloader">
-    <div class="p">LOADING</div>
+    <h2 class="loadf">XTREME TECH</h2>
 </div>
 
 <script>
@@ -25,7 +27,7 @@ eventLag: false
 };
 
 Pace.on('done', function() {
-$('.p').delay(500).animate({top: '30%', opacity: '0'}, 3000, $.bez([0.19,1,0.22,1]));
+$('.loadf').delay(500).animate({top: '30%', opacity: '0'}, 3000, $.bez([0.19,1,0.22,1]));
 
 
 $('#preloader').delay(1500).animate({top: '-100%'}, 2000, $.bez([0.19,1,0.22,1]));
@@ -38,10 +40,11 @@ TweenMax.from(".title", 2, {
     })
 });
 
+</script>
       
 
  
-      <?php include("includes/footer.php"); ?>
+    
       <?php include("includes/scripts.php"); ?>
    </body>
 </html>
